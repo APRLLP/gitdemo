@@ -1,9 +1,9 @@
 @echo off
-REM Generate the first 100 perfect squares and save to squares.out
+REM Generate the first 1000 perfect squares and save to squares.out
 
-echo First 100 perfect squares: >squares.out
+echo First 1000 perfect squares: >squares.out
 
-for /l %%n in (1,1,100) do call :square %%n
+for /l %%n in (1,1,1000) do call :square %%n
 goto end
 
 :square
