@@ -1,13 +1,13 @@
 @echo off
-REM Generate the first 1000 perfect squares and save to squares.out
+REM Generate the first 1000 perfect cubes and save to cubes.out
 
-echo First 1000 perfect squares: >squares.out
+echo First 1000 perfect cubes: >cubes.out
 
-for /l %%n in (1,1,1000) do call :square %%n
+for /l %%n in (1,1,1000) do call :cube %%n
 goto end
 
-:square
-set /a square="%1*%1"
-echo %square% >>squares.out
+:cube
+set /a cube="%1*%1*%1"
+echo %cube% >>cubes.out
 
 :end
